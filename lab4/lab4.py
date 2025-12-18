@@ -148,11 +148,10 @@ if __name__ == "__main__":
     cv_canny = cv.Canny(blurred_image, int(low_thresh), int(high_thresh))
 
     cv.imshow("1. Grayscale Image", gray_image)
-    cv.imshow("2. Blurred Image (Gaussian)", blurred_image)
+    cv.imshow("2. Blurred Image", blurred_image)
     cv.imshow("3. Gradient Magnitude", mag_normalized)
-    cv.imshow("4. Canny Edges (Our Implementation)", edges)
+    cv.imshow("4. Canny Edges", edges)
     cv.imshow("5. OpenCV Canny", cv_canny)
 
     cv.waitKey(0)
     cv.destroyAllWindows()
-    
